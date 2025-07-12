@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Movie Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <label for="userSelect">Choose User:</label>
+    <select id="userSelect">
+      <option value="absar">Absar</option>
+      <option value="friend1">Friend 1</option>
+      <option value="friend2">Friend 2</option>
+      <option value="friend3">Friend 3</option>
+      <option value="friend4">Friend 4</option>
+      <option value="friend5">Friend 5</option>
+    </select>
+
+    <input type="text" id="searchInput" placeholder="Search for a movie...">
+    <button id="searchButton">Search</button>
+  </header>
+
+  <h2>Search Results</h2>
+  <div id="resultsContainer"></div>
+
+  <h2>Your Watchlist</h2>
+  <div id="watchlistContainer"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
