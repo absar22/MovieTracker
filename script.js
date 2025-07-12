@@ -29,7 +29,8 @@ function fetchData() {
   document.querySelector('header').appendChild(loadingMessage);
 
   // Fetch data from OMDB API
-  fetch(`http://www.omdbapi.com/?i=tt3896198&apikey=2b4f5112&s=${encodeURIComponent(input)}`)
+ fetch(`https://www.omdbapi.com/?apikey=2b4f5112&s=${encodeURIComponent(input)}`)
+
     .then(res => res.json())
     .then(data => {
       loadingMessage.remove(); // Remove loading message
